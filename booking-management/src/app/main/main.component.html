@@ -4,11 +4,34 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-        <mat-tab-group mat-align-tabs="start">
-            <mat-tab label="Business Details">Content 1</mat-tab>
+        <mat-tab-group >
+            <mat-tab label="Business Details">
+                <app-business-details></app-business-details>
+            </mat-tab>
             <mat-tab label="Owners Details">Content 2</mat-tab>
             <mat-tab label="Business Preferences">Content 3</mat-tab>
           </mat-tab-group>
-         
     </mat-sidenav-content>
+
+    <mat-sidenav position = "end" mode = "side" opened>
+        <section class = "sidenav-right-section">
+          <span><form class="form-inline md-form form-sm">
+            <mat-icon>search</mat-icon>
+            <input class="playground container content" type="text" placeholder="Search" aria-label="Search">
+            <mat-icon>circle_notifications</mat-icon>
+          </form>
+        </span>
+       </section>
+       <section class = "sidenav-right-section">
+       </section>
+       <section class = "sidenav-right-section">
+       </section>
+       <section class = "sidenav-right-section">
+       </section>
+       <section class = "sidenav-right-section">
+       </section>
+       <section class = "sidenav-right-section">
+       </section>
+      </mat-sidenav>
+      
   </mat-sidenav-container>
