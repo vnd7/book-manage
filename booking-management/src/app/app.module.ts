@@ -13,7 +13,13 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
-
+import { OwnerDetailsComponent } from './owner-details/owner-details.component';
+import { BusinessPreferencesComponent } from './business-preferences/business-preferences.component';
+import { BusinessPackageComponent } from './business-package/business-package.component';
+import { BankDetailsComponent } from './bank-details/bank-details.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatNativeDateModule} from '@angular/material/core';
 
 
 
@@ -23,6 +29,10 @@ import {MatIconModule} from '@angular/material/icon';
     AppComponent,
     MainComponent,
     BusinessDetailsComponent,
+    OwnerDetailsComponent,
+    BusinessPreferencesComponent,
+    BusinessPackageComponent,
+    BankDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +45,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatInputModule,
     MatSelectModule,
     MatIconModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
