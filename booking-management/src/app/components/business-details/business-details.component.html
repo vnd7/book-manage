@@ -1,5 +1,5 @@
 <div style="background:white;margin-top:16px">
-    <div style="color: orange;padding-left:18px;font-weight:bold;padding-top: 16px;">
+    <div style="color: orange;padding-left:18px;font-weight:bold;padding-top: 16px;letter-spacing: 1px;">
         Note: Please add all the information as per business registered document for efficient onboarding!
     </div>
     <div style="margin-left:50px;margin-right:50px">
@@ -47,23 +47,30 @@
 
                     <div fxFlex.gt-md="0 0 calc(50%-32px)" fxFlex.gt-sm="100" fxLayoutGap="8px">
                         <div fxFlex="20" class="front" fxLayoutAlign="center center">
-                            Front
+                            <img [src]="f1" style="height: 100%;width: 100%;"
+                            *ngIf="f1">
+                            <span *ngIf="!f1">Front</span>
                         </div>
                         <div fxFlex="30" fxLayout="column" fxLayoutAlign="center center" style="padding-top: 8px;">
-                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center">
+                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center"  (click)="frontImage1.click()">
                                 Upload Image
                             </div>
+
+                            <input type="file" #frontImage1 (change)="readImageF1($event)" placeholder="Upload Image" style="display: none;">
+
                             <div fxFlex="100" fxLayout="row" style="font-size: 8px;">
                                 JPG, GIF or PNG
                             </div>
                         </div>
                         <div fxFlex="20" class="front" fxLayoutAlign="center center">
-                            Back
+                            <img [src]="b1" style="height: 100%;width: 100%;" *ngIf="b1">
+                            <span *ngIf="!b1">Back</span>
                         </div>
                         <div fxFlex="30" fxLayout="column" fxLayoutAlign="center center" style="padding-top: 8px;">
-                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center">
+                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center"  (click)="backImage1.click()">
                                 Upload Image
                             </div>
+                            <input type="file" #backImage1 (change)="readImageB1($event)" placeholder="Upload Image" style="display: none;">
                             <div fxFlex="100" fxLayout="row" style="font-size: 8px;">
                                 JPG, GIF or PNG
                             </div>
@@ -75,23 +82,28 @@
                     <div style="padding-top: 8px;" fxFlex.gt-md="0 0 calc(50%-32px)" fxFlex.gt-sm="100"
                         fxLayoutGap="8px">
                         <div fxFlex="20" class="front" fxLayoutAlign="center center">
-                            Front
+                            <img [src]="f2" style="height: 100%;width: 100%;" *ngIf="f2">
+                            <span *ngIf="!f2">Front</span>
                         </div>
                         <div fxFlex="30" fxLayout="column" fxLayoutAlign="center center" style="padding-top: 8px;">
-                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center">
+                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center" (click)="frontImage2.click()">
                                 Upload Image
+                               
                             </div>
+                            <input type="file" #frontImage2 (change)="readImageF2($event)" placeholder="Upload Image" style="display: none;">
                             <div fxFlex="100" fxLayout="row" style="font-size: 8px;">
                                 JPG, GIF or PNG
                             </div>
                         </div>
                         <div fxFlex="20" class="front" fxLayoutAlign="center center">
-                            Back
+                            <img [src]="b2" style="height: 100%;width: 100%;" *ngIf="b2"> 
+                            <span *ngIf="!b2">Back</span>
                         </div>
                         <div fxFlex="30" fxLayout="column" fxLayoutAlign="center center" style="padding-top: 8px;">
-                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center">
+                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center"  (click)="backImage2.click()">
                                 Upload Image
                             </div>
+                            <input type="file" #backImage2 (change)="readImageB2($event)" placeholder="Upload Image" style="display: none;">
                             <div fxFlex="100" fxLayout="row" style="font-size: 8px;">
                                 JPG, GIF or PNG
                             </div>
@@ -128,24 +140,28 @@
                         </div>
 
 
-                        <div fxFlex="20" class="front">
-                            Front
+                        <div fxFlex="20" class="front" fxLayoutAlign="center center">
+                            <img [src]="f3" style="height: 100%;width: 100%;" *ngIf="f3">
+                            <span *ngIf="!f3">Front</span>
                         </div>
                         <div fxFlex="20" fxLayout="column" fxLayoutAlign="center center" style="padding-top: 8px;">
-                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center">
+                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center" (click)="frontImage3.click()">
                                 Upload Image
                             </div>
+                            <input type="file" #frontImage3 (change)="readImageF3($event)" placeholder="Upload Image" style="display: none;">
                             <div fxFlex="100" fxLayout="row" style="font-size: 8px;">
                                 JPG, GIF or PNG
                             </div>
                         </div>
-                        <div fxFlex="20" class="front">
-                            Back
+                        <div fxFlex="20" class="front" fxLayoutAlign="center center">
+                            <img [src]="b3" style="height: 100%;width: 100%;" *ngIf="b3">
+                            <span *ngIf="!b3">Back</span>
                         </div>
                         <div fxFlex="20" fxLayout="column" fxLayoutAlign="center center" style="padding-top: 8px;">
-                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center">
+                            <div fxFlex="100" fxLayout="row" class="upload-image" fxLayoutAlign="center center" (click)="backImage3.click()">
                                 Upload Image
                             </div>
+                            <input type="file" #backImage3 (change)="readImageB3($event)" placeholder="Upload Image" style="display: none;">
                             <div fxFlex="100" fxLayout="row" style="font-size: 8px;">
                                 JPG, GIF or PNG
                             </div>

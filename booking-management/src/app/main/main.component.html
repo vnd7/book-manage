@@ -70,27 +70,46 @@
     <mat-sidenav position="end" mode="side" #matSideNav style="padding:16px;" opened>
         <section class="sidenav-right-section">
 
-            <div class="form-inline md-form form-sm" fxFlex="100">
+            <div class="form-inline md-form form-sm" fxFlex="100" style="position: relative;">
 
-                <input class="playground container content" type="text" placeholder="Search" aria-label="Search">
+                <input class="playground container content" type="text" placeholder="Search" aria-label="Search" style="height: 35px;margin-top: 5px;">
                 <mat-icon class="search-icon">search</mat-icon>
-                <mat-icon style="float: right;">circle_notifications</mat-icon>
+                <mat-icon style="float: right;    font-size: 46px;
+                margin-right: 37px;">circle_notifications</mat-icon>
             </div>
 
         </section>
         <div fxLayout="row">
             <div class="profile-name">
-                Hello
+                Hello,
                 <div style="margin-top: 10px;">
-                    9765453421
+                   <b>9765453421</b> 
                 </div>
             </div>
-            <div fxFlex fxLayoutAlign="end start" >
+            <div fxFlex fxLayoutAlign="end start">
                 <mat-icon class="profile-icon">account_circle</mat-icon>
             </div>
 
 
         </div>
+
+        <section class="sidenav-right-section" style="margin-top: 60px;">
+
+            <div class="form-inline md-form form-sm" fxFlex="100" style="position: relative;">
+
+                <input class="playground container content" type="text" placeholder="" aria-label="Search" style="padding:8px;width: 80%;">
+                <mat-icon class="copy-icon">content_copy</mat-icon>
+               
+            </div>
+            <button mat-button style="    background-color: #ffa50091;
+            height: 50px;
+            width: 120px;
+            border-radius: 30px;
+            margin-right: 20px;">
+                Edit Link
+            </button>
+        </section>
+        
         <div>
             <mat-card class="profile-card">
                 <mat-card-header></mat-card-header>
@@ -101,18 +120,18 @@
                         </div>
                         <div class="card-title">
                             Premium/PRO
-                        </div> 
+                        </div>
                         <div class="card-subtitle">
                             For more Business Control
                         </div>
                     </div>
-                    <div fxFlex="40" fxLayoutAlign="end center" >
-                        <div class="crown-div" >
+                    <div fxFlex="40" fxLayoutAlign="end center">
+                        <div class="crown-div">
                             <mat-icon svgIcon="crown" class="crown-icon"></mat-icon>
                         </div>
 
                     </div>
-                   
+
                 </mat-card-content>
                 <mat-card-actions></mat-card-actions>
             </mat-card>
@@ -126,9 +145,9 @@
                 <div fxLayout="column" fxFlex="20" fxLayoutAlign="start center">
                     <div class="step-1" fxLayout="row" fxLayoutAlign="center center">
                         <span>
-1
+                            1
                         </span>
-                      
+
                     </div>
 
                 </div>
@@ -153,7 +172,7 @@
 
                 </div>
                 <div fxLayout="column" fxFlex="80">
-                    <div  class="step-title">
+                    <div class="step-title">
                         Add Drivers and Fleets
                     </div>
                     <div class="step-subtitle">
@@ -166,7 +185,7 @@
 
             <div fxLayout="row" fxFlex="100" style="margin-top: 30px;">
                 <div fxLayout="column" fxFlex="20" fxLayoutAlign="start center">
-                    <div class="step-3">
+                    <div class="step-3" fxLayout="row" fxLayoutAlign="center center">
                         <span>
                             3
                         </span>
