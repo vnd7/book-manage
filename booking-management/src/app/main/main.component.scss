@@ -8,10 +8,17 @@
  }
  .sidenav-section {
     display: flex;
-    align-content: center;
+    justify-content: center;
     align-items: center;
     height: 60px;
-    width:100px;   
+    width:60px;   
+    cursor: pointer;
+   
+ }
+
+ .registration{
+  margin-top: 80px;
+  color: orange;
  }
  .sidenav-right-section{
    display: flex;
@@ -36,6 +43,7 @@
    background: white;
    border: 1px solid gray;
    border-radius: 20px;
+   padding-left: 38px;
    
    .content {
      padding: 0 12px;
@@ -58,4 +66,122 @@
        margin-left: 5px;
      }
    }
+ }
+
+ .subtitle{
+     font-size: 10px;
+     position: absolute;
+     top: 50px;
+     left: 16px;
+    //  font-weight: bold;
+     color: gray;
+ }
+
+ .k-profile{
+     font-size: 25px;
+     text-align: center;
+     padding-top: 16px;
+ }
+
+ .example-container{
+   background:#f5f5f5
+ }
+
+ .profile-icon{
+  font-size: 60px;
+  height: 60px;
+  width: 60px;
+  color: orange;
+ }
+
+ .profile-name{
+   font-weight: bold;
+   font-size: 25px;
+ }
+
+ .profile-card{
+   margin: 8px;
+   margin-top: 20px;
+   height: 120px;
+   border-radius: 20px;
+   background-color: black;
+   color:white
+ }
+
+ .greetings{
+   font-size: 20px;
+   font-weight: bold;
+   padding-top: 16px;
+ }
+
+ .search-icon{
+   position: absolute;
+   left: 24px;
+   top: 19px;
+ }
+
+ .step-1{
+  height: 40px;
+  width: 40px;
+  background: orange;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+ }
+
+ .step-3{
+  height: 40px;
+  width: 40px;
+  background: orange;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  
+ }
+
+ .step-1::after{
+   content: '';
+   display: block;
+   height: 35px;
+   width: 2px;
+   background:gray;
+   margin-top: 74px;
+   margin-left: -4px;
+  
+
+ }
+
+ .step-title{
+   font-size: 17px;
+   font-weight: bold;
+ }
+
+ .step-subtitle{
+  font-size: 10px;
+  color: gray;
+  margin-top: 4px;
+   
+ }
+
+ .card-title{
+font-weight: bold;
+font-size: 20px;
+ }
+
+ .card-subtitle{
+   padding-top: 8px;
+   font-size: 10px;
+ }
+
+ .crown-div{
+   background-color: orange;
+   height: 70px;
+    width: 70px;
+    border-radius: 20px;
+ }
+
+ .crown-icon{
+  height: 40px;
+  width: 40px;
+  padding: 16px;
  }

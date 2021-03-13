@@ -1,15 +1,59 @@
 <mat-sidenav-container class="example-container">
     <mat-sidenav mode="side" opened>
-      sidenav
+        <div class="k-profile">
+            K
+        </div>
+        <section class="sidenav-section registration">
+            <span>
+                <mat-icon>list_alt</mat-icon>
+            </span>
+        </section>
+
+        <section class="sidenav-section">
+            <span>
+                <mat-icon>grid_view</mat-icon>
+            </span>
+        </section>
+        <section class="sidenav-section">
+            <span>
+                <mat-icon class="icon-view">connect_without_contact
+                </mat-icon>
+            </span>
+        </section>
+        <section class="sidenav-section">
+            <span>
+                <mat-icon>calendar_today</mat-icon>
+            </span>
+        </section>
+        <section class="sidenav-section">
+            <span>
+                <mat-icon>mail</mat-icon>
+            </span>
+        </section>
+        <section class="sidenav-section">
+            <span>
+                <mat-icon>settings</mat-icon>
+            </span>
+        </section>
     </mat-sidenav>
 
     <mat-sidenav-content>
-        <mat-tab-group >
+        <mat-toolbar>
+            <div style="font-size: 35px;">
+                Registration!
+            </div>
+
+
+        </mat-toolbar>
+        <div class="subtitle">
+            Please complete your registration
+        </div>
+        <mat-tab-group style="padding: 16px;">
             <mat-tab label="Business Details">
                 <app-business-details></app-business-details>
             </mat-tab>
             <mat-tab label="Owners Details">
-              <app-owner-details></app-owner-details>
+                <app-owner-details></app-owner-details>
             </mat-tab>
             <mat-tab label="Business Preferences">
                 <app-business-preferences></app-business-preferences>
@@ -20,28 +64,128 @@
             <mat-tab label="Bank Details">
                 <app-bank-details></app-bank-details>
             </mat-tab>
-          </mat-tab-group>
+        </mat-tab-group>
     </mat-sidenav-content>
 
-    <mat-sidenav position = "end" mode = "side" opened>
-        <section class = "sidenav-right-section">
-          <span><form class="form-inline md-form form-sm">
-            <mat-icon>search</mat-icon>
-            <input class="playground container content" type="text" placeholder="Search" aria-label="Search">
-            <mat-icon>circle_notifications</mat-icon>
-          </form>
-        </span>
-       </section>
-       <section class = "sidenav-right-section">
-       </section>
-       <section class = "sidenav-right-section">
-       </section>
-       <section class = "sidenav-right-section">
-       </section>
-       <section class = "sidenav-right-section">
-       </section>
-       <section class = "sidenav-right-section">
-       </section>
-      </mat-sidenav>
-      
-  </mat-sidenav-container>
+    <mat-sidenav position="end" mode="side" #matSideNav style="padding:16px;" opened>
+        <section class="sidenav-right-section">
+
+            <div class="form-inline md-form form-sm" fxFlex="100">
+
+                <input class="playground container content" type="text" placeholder="Search" aria-label="Search">
+                <mat-icon class="search-icon">search</mat-icon>
+                <mat-icon style="float: right;">circle_notifications</mat-icon>
+            </div>
+
+        </section>
+        <div fxLayout="row">
+            <div class="profile-name">
+                Hello
+                <div style="margin-top: 10px;">
+                    9765453421
+                </div>
+            </div>
+            <div fxFlex fxLayoutAlign="end start" >
+                <mat-icon class="profile-icon">account_circle</mat-icon>
+            </div>
+
+
+        </div>
+        <div>
+            <mat-card class="profile-card">
+                <mat-card-header></mat-card-header>
+                <mat-card-content>
+                    <div fxFlex="60" style="margin-top:20px">
+                        <div class="card-title">
+                            Go
+                        </div>
+                        <div class="card-title">
+                            Premium/PRO
+                        </div> 
+                        <div class="card-subtitle">
+                            For more Business Control
+                        </div>
+                    </div>
+                    <div fxFlex="40" fxLayoutAlign="end center" >
+                        <div class="crown-div" >
+                            <mat-icon svgIcon="crown" class="crown-icon"></mat-icon>
+                        </div>
+
+                    </div>
+                   
+                </mat-card-content>
+                <mat-card-actions></mat-card-actions>
+            </mat-card>
+        </div>
+        <div class="greetings">
+            Welcome 987654329
+
+        </div>
+        <div fxLayout="column">
+            <div fxLayout="row" fxFlex="100" style="margin-top: 30px;">
+                <div fxLayout="column" fxFlex="20" fxLayoutAlign="start center">
+                    <div class="step-1" fxLayout="row" fxLayoutAlign="center center">
+                        <span>
+1
+                        </span>
+                      
+                    </div>
+
+                </div>
+                <div fxLayout="column" fxFlex="80">
+                    <div class="step-title">
+                        Complete Your Business Registration
+                    </div>
+                    <div class="step-subtitle">
+                        We are here to bring business to you!
+                    </div>
+
+                </div>
+            </div>
+
+            <div fxLayout="row" fxFlex="100" style="margin-top: 30px;">
+                <div fxLayout="column" fxFlex="20" fxLayoutAlign="start center">
+                    <div class="step-1" fxLayout="row" fxLayoutAlign="center center">
+                        <span>
+                            2
+                        </span>
+                    </div>
+
+                </div>
+                <div fxLayout="column" fxFlex="80">
+                    <div  class="step-title">
+                        Add Drivers and Fleets
+                    </div>
+                    <div class="step-subtitle">
+                        Add all the drivers and fleet
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div fxLayout="row" fxFlex="100" style="margin-top: 30px;">
+                <div fxLayout="column" fxFlex="20" fxLayoutAlign="start center">
+                    <div class="step-3">
+                        <span>
+                            3
+                        </span>
+                    </div>
+
+                </div>
+                <div fxLayout="column" fxFlex="80">
+                    <div class="step-title">
+                        Select your package!
+                    </div>
+                    <div class="step-subtitle">
+                        Your get leads and platform to handle your business needs.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </mat-sidenav>
+
+</mat-sidenav-container>
