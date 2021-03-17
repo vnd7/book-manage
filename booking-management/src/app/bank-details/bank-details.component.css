@@ -1,0 +1,11 @@
+.front {
+  padding: 8px;
+  border: 2px dotted lightgray;
+  border-radius: 10px;
+  background-color: #d3d3d338; }
+
+.upload-image {
+  background-color: #d3d3d338;
+  border-radius: 15px;
+  font-size: 10px;
+  width: 100%; }

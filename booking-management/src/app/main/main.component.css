@@ -1,0 +1,161 @@
+.sidenav-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee; }
+
+.sidenav-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  cursor: pointer; }
+
+.registration {
+  margin-top: 80px;
+  color: #ffa500a8; }
+
+.sidenav-right-section {
+  display: flex;
+  height: 100px;
+  width: 400px; }
+
+.icon-view {
+  align-items: center; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: white; }
+
+.container {
+  width: 200px;
+  height: 25px;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding-left: 38px; }
+  .container .content {
+    padding: 0 12px;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .container .content input {
+      flex: 1 1 auto;
+      margin: 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      height: 100%;
+      background: transparent; }
+    .container .content i {
+      flex: 0 0 auto;
+      margin-left: 5px; }
+
+.subtitle {
+  font-size: 10px;
+  position: absolute;
+  top: 50px;
+  left: 16px;
+  color: gray; }
+
+.k-profile {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 16px; }
+
+.example-container {
+  background: #f5f5f5;
+  height: 100%; }
+
+.profile-icon {
+  font-size: 60px;
+  height: 60px;
+  width: 60px;
+  color: orange; }
+
+.profile-name {
+  font-size: 25px; }
+
+.profile-card {
+  margin: 8px;
+  height: 120px;
+  border-radius: 20px;
+  color: white; }
+
+.greetings {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20%; }
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 16px; }
+
+.copy-icon {
+  position: absolute;
+  top: 9px;
+  right: 60px; }
+
+.step-1 {
+  height: 40px;
+  width: 40px;
+  background: #ffa50061;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500; }
+
+.step-3 {
+  height: 40px;
+  width: 40px;
+  background: #ffa50061;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500; }
+
+.step-1::after {
+  content: '';
+  display: block;
+  height: 35px;
+  width: 2px;
+  background: gray;
+  margin-top: 74px;
+  margin-left: -4px; }
+
+.step-title {
+  font-size: 17px;
+  font-weight: 500; }
+
+.step-subtitle {
+  font-size: 10px;
+  color: gray;
+  margin-top: 4px; }
+
+.card-title {
+  font-weight: bold;
+  font-size: 20px; }
+
+.card-subtitle {
+  padding-top: 8px;
+  font-size: 10px; }
+
+.crown-div {
+  background-color: orange;
+  height: 70px;
+  width: 70px;
+  border-radius: 20px; }
+
+.crown-icon {
+  height: 40px;
+  width: 40px;
+  padding: 16px; }
+
+.bg-image {
+  background-image: url("./../../assets/images/pro-image.png");
+  height: 100%;
+  width: 290px;
+  margin-left: 32px; }
